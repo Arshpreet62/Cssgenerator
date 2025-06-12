@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# CSS Generator 🎨⚙️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, live CSS generator built with **TypeScript** and **React**. Customize styles visually, preview the results, and copy the CSS or HTML instantly!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Demo
 
-## Expanding the ESLint configuration
+Check it out live:  
+👉 [cssgenerator-fwgl2zph8-arshpreet62s-projects.vercel.app](https://cssgenerator-fwgl2zph8-arshpreet62s-projects.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Style **Buttons**, **Inputs**, and **Paragraphs**
+- Real-time visual update as you tweak styles
+- Syntax-highlighted **CSS** and **HTML** snippets using `react-syntax-highlighter`
+- "Copy to Clipboard" functionality for easy export
+- Reset styles to defaults or context-based presets
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧭 Tech Stack
+
+| Layer       | Tech                             |
+|-------------|----------------------------------|
+| Frontend    | React + TypeScript + Vite        |
+| Routing     | Wouter                           |
+| Styling     | Tailwind CSS                     |
+| Code Preview| react-syntax-highlighter (One Dark) |
+| Deployment  | Vercel                           |
+
+---
+
+## 📦 Getting Started (Local Setup)
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/Arshpreet62/Cssgenerator.git
+   cd Cssgenerator
