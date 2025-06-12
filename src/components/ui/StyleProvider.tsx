@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "../../Context/Context";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -155,9 +155,8 @@ font-family: ${FontFamily};
               style={oneDark}
               customStyle={{ background: "none" }}
               className="w-full h-full text-break-words overflow-x-auto"
-            >
-              {htmlString(FontFamily)}
-            </SyntaxHighlighter>
+              children={htmlString(FontFamily) as any}
+            />
           </div>
         )}
         <div className="flex flex-col gap-5 w-[400px] h-[480px]">
