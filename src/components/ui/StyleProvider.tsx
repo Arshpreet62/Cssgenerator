@@ -24,7 +24,7 @@ export default function StyleProvider() {
     letterSpacing,
   } = useContext(Context);
 
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const path = location.split("/")[2];
   const component =
     path === "button"

@@ -25,7 +25,7 @@ interface ContextType {
   setBorderStyle: Dispatch<SetStateAction<string>>;
   getCSS: boolean;
   setGetCSS: Dispatch<SetStateAction<boolean>>;
-  resetState: () => void;
+  resetState: (component: string) => void;
   FontFamily: string;
   setFontFamily: Dispatch<SetStateAction<string>>;
   lineHeight: string;
