@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-red-500: #f00;
+  --color-green-500: #0f0;
+  --color-primary: var(--color-red-500);
+}
